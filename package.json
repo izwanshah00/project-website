@@ -1,0 +1,13 @@
+
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "scripts": {
+    "sass-compile": "sass scss/custom_bootstrap.scss css/bootstrap.min.css --style compressed",
+    "sass-watch": "sass --watch scss/custom_bootstrap.scss:css/bootstrap.min.css"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.x.x", 
+    "sass": "^1.x.x"
+  }
+}
