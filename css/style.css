@@ -662,22 +662,29 @@ html, body {
 .contact-detail::before {
     position: absolute;
     content: "";
-    height: 50%;
+    height: 70%;
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
+    background: linear-gradient(rgb(215, 53, 99), rgba(219, 98, 129, 0.333)), url(../img/background.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1;
 }
 
 .contact-map {
-    background: #181919;
+    background: #fefdfd;
+    min-height: 500px;
+    display: flex;
 }
 
 .contact-form {
-    background: #111212;
+    background: #fefdfd;
+    min-height: 500px;
+}
+
+.contact-item {
+  margin-bottom: 20px; /* Adjust this value to increase or decrease the space */
 }
 
 /*** Contact End ***/
