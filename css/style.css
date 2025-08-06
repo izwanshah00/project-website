@@ -479,8 +479,28 @@ html, body {
 
 
 /*** Blog Start ***/
+.blog-item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.blog-item:hover img,
+.blog-item:hover h5,
+.blog-item:hover p {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.blog-item img,
+.blog-item h5,
+.blog-item p {
+    transition: transform 0.3s ease;
+}
+
+
 .blog-item .blog-btn {
     z-index: 2;
+    transition: all 0.3s ease;
 }
 
 .blog-btn .blog-btn-icon {
