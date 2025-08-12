@@ -58,9 +58,9 @@
     });
 
 
-    // Testimonial carousel
+    // Careers carousel
 
-    $(".testimonial-carousel").owlCarousel({
+    $(".careers-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
         center: true,

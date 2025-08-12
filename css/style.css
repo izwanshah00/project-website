@@ -711,25 +711,33 @@
 /*** Team End ***/
 
 
-/*** Testimonial Start ***/
+/*** Careers Start ***/
 
-.testimonial-item {
+.careers-item {
     background: #e3f0eb;
+    min-height: 370px; 
     display: flex;
-    min-height: 360px;
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.testimonial-carousel .owl-dots {
+.careers-item:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18),
+                0 0 15px rgba(0,123,255,0.3); /* glow biru lembut */
+    position: relative;
+    z-index: 10;
+}
+
+.careers-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
+.careers-carousel .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -740,35 +748,26 @@
     transition: .5s;
 }
 
-.testimonial-carousel .owl-dot.active {
+.careers-carousel .owl-dot.active {
     width: 30px;
     background: var(--bs-primary);
 }
 
-.testimonial-carousel .owl-item.center {
+.careers-carousel .owl-item.center {
     position: relative;
     z-index: 1;
 }
 
-.testimonial-carousel .owl-item .testimonial-item {
+.careers-carousel .owl-item .careers-item {
     transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
+.careers-carousel .owl-item.center .careers-item {
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-/* Hover timbul + glow */
-.testimonial-item:hover {
-    transform: translateY(-6px) scale(1.04);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.18),
-                0 0 15px rgba(0,123,255,0.3); /* glow biru lembut */
-    position: relative;
-    z-index: 10;
-}
-
-/*** Testimonial End ***/
+/*** Careers End ***/
 
 
 /*** Contact Start ***/
@@ -808,14 +807,14 @@
 .footer {
     background-color: #111111;
     color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 16px;
 }
 
 .footer h5 {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
     position: relative;
@@ -868,8 +867,8 @@
 
 .footer .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
     text-align: center;
     font-size: 14px;
     color: #aaaaaa;
